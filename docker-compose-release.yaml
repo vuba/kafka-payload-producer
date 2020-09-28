@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  kafka-payload-producer:
+    image: com.vuba/kafka-payload-producer:0.0.1
+    build:
+      context: .
+    environment:
+      KAFKA_BROKER: kafka
+    ports:
+      - "8080:8080"
