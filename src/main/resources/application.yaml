@@ -1,0 +1,10 @@
+kafka:
+  broker: localhost
+
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: ${kafka.broker}:9092
+      client-id: kafka-payload-producer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
