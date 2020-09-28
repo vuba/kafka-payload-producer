@@ -1,5 +1,5 @@
 kafka:
-  broker: localhost
+  broker: 192.168.99.101
 
 spring:
   kafka:
